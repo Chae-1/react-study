@@ -69,4 +69,11 @@
 #### componentDidUpdate
 
 - prevProps, prevState를 사용하여 이전 컴포넌트가 가졌던 데이터에 접근 가능하다.
--
+
+#### componentWillUnmount
+
+- DOM에서 컴포넌트를 제거할 때 실행한다.
+
+#### componentDidCatch
+
+- 컴포넌트렌더링 도중에 에러가 발생했을 때 애플리케이션이 먹통되지 않고 오류 UI를 보여 줄 수 있게 해준다.
