@@ -6,6 +6,19 @@ const DECREASE = "counter/DECREASE"; // action type
 export const increase = createAction(INCREASE);
 export const decrease = createAction(DECREASE); // action crete function
 
+export const increaseAsync = () => dispatch => {
+  setTimeout(() => {
+    dispatch(increase());
+  }, 1000)
+}
+
+
+export const decreaseAsync = () => dispatch => {
+  setTimeout(() => {
+    dispatch(decrease());
+  }, 1000)
+}
+
 const initialState = {
   number: 0,
 };

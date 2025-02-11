@@ -40,5 +40,9 @@ const counter = handleActions(
   },
   initialState
 );
+// action type: (state, action) => {...}
+// 초기 state
 
 export default counter;
+
+// 1. redux store에 의한 상태관리를 위해서는 action, reducer 정의는 필수
