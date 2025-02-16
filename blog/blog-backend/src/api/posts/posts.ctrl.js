@@ -51,7 +51,6 @@ exports.remove = (ctx) => {
 	ctx.status = 204;
 };
 
-// put
 exports.replace = (ctx) => {
 	const { id } = ctx.params;
 
@@ -82,4 +81,6 @@ exports.update = (ctx) => {
 		};
 		return;
 	}
+
+	ctx.body = posts[index];
 };
